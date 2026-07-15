@@ -2,74 +2,90 @@
 
 # DieWan
 
-**Portable rights. Local proof. No bridge authority.**
+### Infrastructure for an Accountability Economy
 
-Client-side validation infrastructure for digital rights that move across chains without moving trust into a bridge committee.
+**Authority stated. Action proven. Responsibility preserved.**
+
+DieWan explores systems in which consequential digital actions carry verifiable evidence of what was authorized, what occurred, and who or what remains responsible.
 
 </div>
 
 ---
 
-## The premise
+## The larger idea
 
-Most cross-chain systems move an asset by introducing a new authority: a custodian, federation, relayer set, bridge contract, or wrapped representation.
+Today's digital economy is very good at recording transactions and much weaker at preserving accountability.
 
-DieWan takes a different route.
+An action may be technically valid while its authority, purpose, and responsibility remain unclear. An automated agent may have permission to act without leaving durable evidence that its specific action matched the mandate it received.
 
-A right remains in client state. A chain-native seal enforces single use. When the seal is consumed, the sender produces evidence. The receiver accepts the right only after verifying that evidence.
+We call the alternative an **Accountability Economy**: an economy where valuable actions can carry portable, independently verifiable evidence of:
+
+- **Mandate** — what was authorized, by whom, and under which limits
+- **Action** — what actually happened
+- **Receipt** — the evidence binding the action to its mandate
+- **Responsibility** — who or what remains answerable for the result
+
+The goal is not more surveillance or merely more logs. It is better-structured proof: evidence that can be checked without surrendering judgment to a central intermediary.
+
+## What DieWan is exploring
+
+| Layer | Question |
+|---|---|
+| **Sanads** | What right, claim, mandate, or responsibility is being carried? |
+| **Single-use seals** | How is reuse, replay, or double exercise prevented? |
+| **Proofs and receipts** | What evidence shows that an authorized transition occurred? |
+| **Client-side validation** | Can the receiver verify the evidence independently? |
+| **Agent accountability** | Can automated actions be bound to explicit human or institutional authority? |
+| **Developer infrastructure** | Can these guarantees become usable building blocks for digital systems? |
+
+A **sanad** is DieWan's working term for a proof-carrying digital instrument: not merely a token, but a portable container for rights, claims, provenance, mandates, and transfer conditions.
+
+## Why client-side validation
+
+Many systems make a platform, custodian, bridge, or committee the final judge of validity.
+
+DieWan investigates a different model:
+
+1. A right or mandate is represented in client-held state.
+2. A single-use seal constrains how it may be exercised.
+3. An action consumes or updates that state.
+4. A proof bundle records the transition.
+5. The receiver verifies the evidence before accepting the result.
 
 **Proof travels. Custody does not.**
 
-## What DieWan builds
-
-| Layer | Function |
-|---|---|
-| **Rights** | Portable client-held state with explicit ownership and transfer rules |
-| **Seals** | Chain-native single-use commitments anchored to each network's own guarantees |
-| **Proofs** | Inclusion, finality, and state-transition evidence that can be independently checked |
-| **Validation** | Local or destination-side verification before a right is accepted |
-| **Developer systems** | SDKs, tooling, wallets, explorers, and agent interfaces around the protocol |
+The aim is to preserve local verification across heterogeneous systems without pretending they all share one machine, one authority, or one trust model.
 
 ## Design principles
 
-- **Native guarantees over simulated universality.** Each chain should enforce single use in the strongest form it natively supports.
-- **Verification over attestation.** A receiver should inspect evidence rather than inherit somebody else's confidence.
-- **Client state over global state.** Application state does not need to become universal consensus merely to become portable.
-- **Explicit invariants over bridge folklore.** Security claims must be expressed as verifiable protocol conditions.
-- **Minimal authority surfaces.** Every trusted operator added to a protocol becomes another institution users must eventually queue behind.
-
-## The transfer model
-
-1. A right is bound to a chain-specific seal.
-2. The source-chain seal is consumed.
-3. The sender constructs a proof bundle from chain data.
-4. The receiver verifies inclusion, finality, and transition validity.
-5. The right is accepted because the proof passes, not because an intermediary approved it.
-
-## What DieWan is not
-
-DieWan is not a custodial bridge, a wrapped-asset factory, a federation with nicer branding, or a promise that all chains are secretly the same machine.
-
-It is a verification model for portable rights across different machines.
+- **Mandate before action.** Permission should be explicit enough to test.
+- **Receipts after action.** Consequences should leave durable, verifiable evidence.
+- **Verification over attestation.** A verifier should inspect proof, not merely inherit confidence.
+- **Native guarantees over simulated universality.** Each system's real security properties must remain visible.
+- **Client state over unnecessary global state.** Not every private fact must become universal consensus.
+- **Minimal authority surfaces.** Every added intermediary creates another place where responsibility can disappear.
+- **Honest status over premature certainty.** Research claims and production guarantees are not the same thing.
 
 ## Current status
 
-DieWan is under active private development.
+DieWan is an early-stage research and engineering organization. The Accountability Economy is an emerging thesis, not yet a finished standard.
 
-The public [`csv-adapter`](https://github.com/diewan/csv-adapter) repository is an archived record of the original implementation direction. It remains available for historical and technical context, but it is not the current release surface.
+The public [`csv-adapter`](https://github.com/diewan/csv-adapter) repository is an archived record of an earlier implementation direction. It remains available for historical and technical context; it is not a production release.
 
-Public specifications, SDKs, reference implementations, and integration material will appear here when they are ready to be depended upon.
+Public specifications, threat models, reference implementations, and integration materials will appear when they are ready to be evaluated and depended upon.
 
-## Public repository
+## A simple standard for the work
 
-| Repository | Purpose | Status |
-|---|---|---|
-| [`csv-adapter`](https://github.com/diewan/csv-adapter) | Original client-side validation and universal-seal implementation | Archived |
+For every consequential digital action, we want to be able to ask:
+
+> Who authorized this? What exactly was authorized? What happened? What proves the match? Who remains responsible?
+
+If a system cannot answer those questions, technical validity alone is not enough.
 
 ---
 
 <div align="center">
 
-**Verify before accepting.**
+**Verify before accepting. Preserve responsibility after execution.**
 
 </div>
