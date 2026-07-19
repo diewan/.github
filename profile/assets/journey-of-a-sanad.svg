@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">The Journey of a Sanad — DieWan</title>
+  <desc id="desc">A front-page infographic showing human intent becoming a portable Sanad, carried by AI agents across chains, applications, and organizations, exercised once, and returned as a verifiable journey record. Parwana, Piteka, Tuppira, and Hemion form the supporting infrastructure.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080B16"/>
+      <stop offset="0.5" stop-color="#0C1225"/>
+      <stop offset="1" stop-color="#11152A"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7657FF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#7657FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#24D4D0" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#24D4D0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="journey" x1="190" y1="0" x2="1410" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9179FF"/>
+      <stop offset="0.48" stop-color="#49B9F2"/>
+      <stop offset="1" stop-color="#31DFC0"/>
+    </linearGradient>
+    <linearGradient id="sanadFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6F50EE"/>
+      <stop offset="1" stop-color="#3FBAD5"/>
+    </linearGradient>
+    <linearGradient id="cardStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8D77FF" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="#31DFC0" stop-opacity="0.22"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+    <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4ACEC7"/>
+    </marker>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M52 0H0V52" fill="none" stroke="#8C9BC0" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <style>
+      text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .eyebrow { font-size: 16px; font-weight: 700; letter-spacing: 4px; fill: #7EE8D5; }
+      .headline { font-size: 58px; font-weight: 750; letter-spacing: -1.8px; fill: #F6F8FF; }
+      .subhead { font-size: 22px; font-weight: 420; fill: #AAB4D2; }
+      .node-kicker { font-size: 13px; font-weight: 750; letter-spacing: 2px; fill: #8FE7DB; }
+      .node-title { font-size: 25px; font-weight: 720; fill: #F7F8FF; }
+      .node-copy { font-size: 15px; font-weight: 430; fill: #AAB4CF; }
+      .step { font-size: 12px; font-weight: 800; fill: #0A1020; }
+      .infra-name { font-size: 21px; font-weight: 740; fill: #F4F7FF; }
+      .infra-copy { font-size: 14px; font-weight: 430; fill: #9EABC9; }
+      .footer-title { font-size: 25px; font-weight: 730; fill: #FFFFFF; }
+      .footer-copy { font-size: 16px; font-weight: 450; fill: #B4C0DB; }
+      .moving-line { stroke-dasharray: 9 14; animation: travel 3s linear infinite; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes travel { to { stroke-dashoffset: -46; } }
+      @keyframes pulse { 0%,100% { opacity: .72; transform: scale(.95); } 50% { opacity: 1; transform: scale(1.06); } }
+      @media (prefers-reduced-motion: reduce) { .moving-line, .pulse { animation: none; } }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+  <ellipse cx="425" cy="305" rx="430" ry="340" fill="url(#glowA)"/>
+  <ellipse cx="1230" cy="455" rx="450" ry="360" fill="url(#glowB)"/>
+
+  <!-- Heading -->
+  <text x="90" y="84" class="eyebrow">DIEWAN · ACCOUNTABILITY ECONOMY</text>
+  <text x="90" y="153" class="headline">The Journey of a Sanad</text>
+  <text x="90" y="196" class="subhead">Portable authority for a world of humans, AI agents, chains, and institutions.</text>
+
+  <!-- Main journey line -->
+  <path d="M175 405 C360 304 516 510 705 402 S1057 301 1422 403" fill="none" stroke="#27304C" stroke-width="12" stroke-linecap="round"/>
+  <path d="M175 405 C360 304 516 510 705 402 S1057 301 1422 403" fill="none" stroke="url(#journey)" stroke-width="4" stroke-linecap="round" class="moving-line" marker-end="url(#arrow)"/>
+
+  <!-- Step 1 -->
+  <g filter="url(#shadow)">
+    <rect x="92" y="278" width="245" height="150" rx="24" fill="#11172A" stroke="url(#cardStroke)" stroke-width="1.5"/>
+    <circle cx="125" cy="309" r="15" fill="#A18EFF"/>
+    <text x="125" y="314" text-anchor="middle" class="step">1</text>
+    <text x="151" y="314" class="node-kicker">HUMAN INTENT</text>
+    <text x="122" y="357" class="node-title">Give a goal</text>
+    <text x="122" y="387" class="node-copy">Purpose · limits · responsibility</text>
+  </g>
+
+  <!-- Step 2 / Sanad -->
+  <g filter="url(#shadow)">
+    <rect x="380" y="383" width="260" height="158" rx="28" fill="url(#sanadFill)"/>
+    <path d="M409 414h46M409 425h31" stroke="#D9F3FF" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="600" cy="421" r="15" fill="#EAFBFF"/>
+    <text x="600" y="426" text-anchor="middle" class="step">2</text>
+    <text x="409" y="467" style="font-size:31px;font-weight:780;fill:#FFFFFF">Sanad</text>
+    <text x="409" y="497" style="font-size:15px;font-weight:520;fill:#E5F6FF">Portable · constrained · verifiable</text>
+    <text x="409" y="522" style="font-size:14px;font-weight:450;fill:#D9EFFF">Permission carrying purpose</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g filter="url(#shadow)">
+    <rect x="693" y="274" width="270" height="166" rx="24" fill="#11172A" stroke="url(#cardStroke)" stroke-width="1.5"/>
+    <circle cx="728" cy="308" r="15" fill="#65C9EC"/>
+    <text x="728" y="313" text-anchor="middle" class="step">3</text>
+    <text x="756" y="313" class="node-kicker">AI AGENTS</text>
+    <text x="724" y="356" class="node-title">Carry authority</text>
+    <text x="724" y="386" class="node-copy">Read · delegate · transform</text>
+    <text x="724" y="412" class="node-copy">Choose how to fulfil the goal</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g filter="url(#shadow)">
+    <rect x="1012" y="389" width="275" height="160" rx="24" fill="#11172A" stroke="url(#cardStroke)" stroke-width="1.5"/>
+    <circle cx="1047" cy="423" r="15" fill="#50D9D0"/>
+    <text x="1047" y="428" text-anchor="middle" class="step">4</text>
+    <text x="1075" y="428" class="node-kicker">ACROSS SYSTEMS</text>
+    <text x="1043" y="471" class="node-title">Cross boundaries</text>
+    <text x="1043" y="501" class="node-copy">Chains · apps · organizations</text>
+    <text x="1043" y="527" class="node-copy">Every participant verifies locally</text>
+  </g>
+
+  <!-- Step 5 -->
+  <g filter="url(#shadow)">
+    <rect x="1326" y="275" width="214" height="164" rx="24" fill="#10221F" stroke="#44DCC2" stroke-opacity="0.65" stroke-width="1.5"/>
+    <circle cx="1360" cy="309" r="15" fill="#4AE0BE"/>
+    <text x="1360" y="314" text-anchor="middle" class="step">5</text>
+    <text x="1388" y="314" class="node-kicker">CONSEQUENCE</text>
+    <text x="1356" y="357" class="node-title">Exercise once</text>
+    <text x="1356" y="387" class="node-copy">Act · consume · create</text>
+    <text x="1356" y="413" class="node-copy">rights, duties, receipts</text>
+  </g>
+
+  <!-- Journey record return -->
+  <path d="M1431 460 C1420 622 1193 636 800 624 C435 613 205 603 164 468" fill="none" stroke="#33415F" stroke-width="2" stroke-dasharray="7 10" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="605" y="576" width="390" height="94" rx="47" fill="#101C2A" stroke="#4BD5C7" stroke-opacity="0.58" stroke-width="1.5"/>
+    <circle cx="656" cy="623" r="25" fill="#49D6C6" fill-opacity="0.14" stroke="#49D6C6"/>
+    <path d="M645 624l8 8 15-18" fill="none" stroke="#62E3CD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="698" y="615" style="font-size:18px;font-weight:740;fill:#F7FAFF">Journey Record</text>
+    <text x="698" y="641" style="font-size:14px;font-weight:440;fill:#A9B8D0">A receipt and a verifiable story return to the human.</text>
+  </g>
+
+  <!-- Principle -->
+  <g>
+    <line x1="165" y1="705" x2="1435" y2="705" stroke="#7382A6" stroke-opacity="0.22"/>
+    <text x="800" y="744" text-anchor="middle" style="font-size:19px;font-weight:520;fill:#DCE3F5">Accountability protects the journey. It does not replace the journey.</text>
+  </g>
+
+  <!-- Infrastructure row -->
+  <g>
+    <rect x="90" y="782" width="330" height="112" rx="20" fill="#101628" stroke="#7657FF" stroke-opacity="0.35"/>
+    <circle cx="123" cy="817" r="10" fill="#8D73FF" class="pulse"/>
+    <text x="145" y="824" class="infra-name">Parwana</text>
+    <text x="123" y="855" class="infra-copy">Gives Sanads their verifiable life:</text>
+    <text x="123" y="878" class="infra-copy">proof, transformation, single use.</text>
+
+    <rect x="450" y="782" width="330" height="112" rx="20" fill="#101628" stroke="#597FF4" stroke-opacity="0.35"/>
+    <circle cx="483" cy="817" r="10" fill="#5F9BF3" class="pulse" style="animation-delay:.4s"/>
+    <text x="505" y="824" class="infra-name">Piteka</text>
+    <text x="483" y="855" class="infra-copy">Humans and agents compose, issue,</text>
+    <text x="483" y="878" class="infra-copy">and coordinate Sanads.</text>
+
+    <rect x="820" y="782" width="330" height="112" rx="20" fill="#101628" stroke="#3CC4D6" stroke-opacity="0.35"/>
+    <circle cx="853" cy="817" r="10" fill="#41CAD8" class="pulse" style="animation-delay:.8s"/>
+    <text x="875" y="824" class="infra-name">Tuppira</text>
+    <text x="853" y="855" class="infra-copy">Observes Sanad journeys across</text>
+    <text x="853" y="878" class="infra-copy">chains, systems, and institutions.</text>
+
+    <rect x="1180" y="782" width="330" height="112" rx="20" fill="#101628" stroke="#38D6B8" stroke-opacity="0.35"/>
+    <circle cx="1213" cy="817" r="10" fill="#3BDBB8" class="pulse" style="animation-delay:1.2s"/>
+    <text x="1235" y="824" class="infra-name">Hemion</text>
+    <text x="1213" y="855" class="infra-copy">Reveals, verifies, and debugs</text>
+    <text x="1213" y="878" class="infra-copy">every hidden step of the journey.</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="90" y="929" width="1420" height="1" fill="#7684A6" opacity="0.23"/>
+  <text x="90" y="969" class="footer-title">DieWan</text>
+  <text x="192" y="969" class="footer-copy">is building the Accountability Economy — portable authority, verifiable consequences.</text>
+</svg>
