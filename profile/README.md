@@ -10,6 +10,10 @@ DieWan explores systems in which consequential digital actions carry verifiable 
 
 </div>
 
+<p align="center">
+  <img src="./assets/journey-of-a-sanad.svg" alt="The Journey of a Sanad: human intent becomes portable authority carried by AI agents across systems, exercised once, and returned as a verifiable journey record." width="100%" />
+</p>
+
 ---
 
 ## The larger idea
